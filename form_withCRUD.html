@@ -13,6 +13,8 @@
 
 <body class="bg-gray-300">
     <!-- //javascript code -->
+
+    
     <script>
         var selectedRow = null;
         function onFormSubmit() {
@@ -47,7 +49,7 @@
             var cell4 = newRow.insertCell(3);
             cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button>  <button onClick="onDelete(this)">Delete</button>`;
         }
-        // Edit the data
+        // Edit the data from given table
         function onEdit(td) {
             selectedRow = td.parentElement.parentElement;
             document.getElementById(`name`).value = selectedRow.cells[0].innerHTML;
